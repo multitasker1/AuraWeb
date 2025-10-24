@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> </head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-md p-4 fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">AuraWeb</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#demos" class="text-gray-600 hover:text-indigo-600 transition duration-300">Demos</a>
+                <a href="#process" class="text-gray-600 hover:text-indigo-600 transition duration-300">Process</a>
+                <a href="#pricing" class="text-gray-600 hover:text-indigo-600 transition duration-300">Pricing</a>
+                <a href="#contact" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-4">
+            <a href="#demos" class="block py-2 px-4 text-gray-800 hover:bg-indigo-50">Demos</a>
+            <a href="#process" class="block py-2 px-4 text-gray-800 hover:bg-indigo-50">Process</a>
+            <a href="#pricing" class="block py-2 px-4 text-gray-800 hover:bg-indigo-50">Pricing</a>
+            <a href="#contact" class="block py-2 px-4 text-indigo-600 hover:bg-indigo-50">Contact Us</a>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-24 md:py-32 flex items-center justify-center min-h-screen-75">
+        <div class="container mx-auto text-center px-4 z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
+                आपके विचारों को डिजिटल वास्तविकता में बदलें।
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up">
+                आकर्षक, रेस्पोंसिव और उपयोगकर्ता-केंद्रित वेब अनुभव।
+            </p>
+            <a href="#demos" class="px-8 py-4 bg-white text-indigo-600 font-bold rounded-full text-lg hover:bg-gray-100 transition duration-300 shadow-lg animate-pop-in">
+                मेरे डेमो देखें <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" fill="currentColor" viewBox="0 0 100 100">
+                <circle cx="20" cy="20" r="10"></circle>
+                <circle cx="80" cy="80" r="15"></circle>
+                <rect x="10" y="50" width="5" height="5" transform="rotate(45 12.5 52.5)"></rect>
+                <polygon points="50,10 60,30 40,30" transform="rotate(180 50 20)"></polygon>
+            </svg>
+        </div>
+    </section>
+    <section id="demos" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+                मेरे कुछ अद्भुत वेब प्रोजेक्ट्स
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="Kalaki-Ram-Art.png" alt="E-commerce Store Demo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Kalaki-Ram-Art's</h3>
+                        <p class="text-gray-600 mb-4">आधुनिक डिज़ाइन और आसान चेकआउट प्रक्रिया के साथ एक पूर्ण-कार्यशील ई-कॉमर्स साइट।</p>
+                        <a href="demo_view/demo_viewer.html?url=https://multitasker1.github.io/Kalaki-Ram-Art-s1/" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-md hover:bg-indigo-700 transition duration-300">
+                            डेमो देखें <i class="fas fa-eye ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="RamJaapVideo.png" alt="Blog Platform Demo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">RamJaapVideo</h3>
+                        <p class="text-gray-600 mb-4">उत्तरदायी और पढ़ने में आसान Bhakti Layout।</p>
+                        <a href="demo_view/demo_viewer.html?url=https://multitasker1.github.io/RamJaapVideo/" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-md hover:bg-indigo-700 transition duration-300">
+                            डेमो देखें <i class="fas fa-eye ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://via.placeholder.com/400x250/c084fc/ffffff?text=Corporate+Page+Demo" alt="Corporate Landing Page Demo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">कॉर्पोरेट लैंडिंग पेज</h3>
+                        <p class="text-gray-600 mb-4">प्रोफेशनल और जानकारीपूर्ण व्यवसाय वेबसाइट।</p>
+                        <a href="demo_view/demo_viewer.html?url=DEMO_URL_3" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-md hover:bg-indigo-700 transition duration-300">
+                            डेमो देखें <i class="fas fa-eye ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="process" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+                हमारी सेवाएँ और कार्यप्रणाली
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-desktop text-5xl text-indigo-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">लाइव डेमो अनुभव</h3>
+                    <p class="text-gray-600">हमारी वेबसाइट पर ही सभी प्रोजेक्ट्स के लाइव डेमो देखें और उनकी कार्यप्रणाली, UX/UI और रेस्पोंसिवनेस का अनुभव करें।</p>
+                </div>
+
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-money-check-alt text-5xl text-indigo-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">सुरक्षित ऑनलाइन भुगतान</h3>
+                    <p class="text-gray-600">हमारी सेवाओं के लिए सुरक्षित और आसान ऑनलाइन भुगतान विकल्प उपलब्ध हैं।</p>
+                </div>
+
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-undo-alt text-5xl text-indigo-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">1 दिन की वापसी नीति</h3>
+                    <p class="text-gray-600">यदि आप डेमो देखने के बाद संतुष्ट नहीं हैं, तो 24 घंटे के भीतर 100% रिफंड पाएं।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+                हमारी लचीली प्राइसिंग
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-xl p-8 flex flex-col justify-between transform hover:scale-105 transition duration-300">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-600">स्टार्टर पैक</h3>
+                        <p class="text-gray-600 mb-6">छोटे व्यवसायों और व्यक्तिगत प्रोजेक्ट्स के लिए आदर्श।</p>
+                        <p class="text-4xl font-extrabold mb-6">₹5,000<span class="text-xl font-normal text-gray-500">/प्रोजेक्ट</span></p>
+                        <ul class="text-left text-gray-700 mb-8 space-y-3">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 1 पेज वेबसाइट</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> रेस्पोंसिव डिज़ाइन</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> बेसिक SEO</li>
+                            <li class="flex items-center"><i class="fas fa-times-circle text-red-500 mr-2"></i> ई-कॉमर्स शामिल नहीं</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="block w-full text-center bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300">
+                        अभी शुरू करें
+                    </a>
+                </div>
+
+                <div class="bg-indigo-600 text-white rounded-lg shadow-xl p-8 flex flex-col justify-between border-4 border-yellow-400 transform scale-105 transition duration-300">
+                    <div class="text-center mb-4">
+                        <span class="bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-1 rounded-full uppercase">सबसे लोकप्रिय</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">बिजनेस प्रो</h3>
+                        <p class="opacity-90 mb-6">मध्यम व्यवसायों और उन्नत सुविधाओं के लिए।</p>
+                        <p class="text-4xl font-extrabold mb-6">₹10,000<span class="text-xl font-normal opacity-75">/प्रोजेक्ट</span></p>
+                        <ul class="text-left mb-8 space-y-3">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-yellow-300 mr-2"></i> 5 पेज तक वेबसाइट</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-yellow-300 mr-2"></i> एडवांस्ड रेस्पोंसिव डिज़ाइन</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-yellow-300 mr-2"></i> ई-कॉमर्स इंटीग्रेशन</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-yellow-300 mr-2"></i> कस्टम फ़ॉर्म्स</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="block w-full text-center bg-yellow-400 text-indigo-800 px-6 py-3 rounded-md font-bold hover:bg-yellow-300 transition duration-300">
+                        इसे चुनें
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-xl p-8 flex flex-col justify-between transform hover:scale-105 transition duration-300">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-600">एंटरप्राइज</h3>
+                        <p class="text-gray-600 mb-6">बड़े प्रोजेक्ट्स और कस्टम समाधानों के लिए।</p>
+                        <p class="text-4xl font-extrabold mb-6">कस्टम<span class="text-xl font-normal text-gray-500">/प्रोजेक्ट</span></p>
+                        <ul class="text-left text-gray-700 mb-8 space-y-3">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> असीमित पेज</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> कस्टम डिज़ाइन और डेवलपमेंट</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> एडवांस्ड इंटीग्रेशन</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> प्राथमिकता सपोर्ट</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="block w-full text-center bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300">
+                        आज ही संपर्क करें
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">आपके अगले प्रोजेक्ट के लिए तैयार हैं?</h2>
+            <p class="text-lg md:text-xl mb-10 opacity-90">हमें बताएं कि आप क्या बनाना चाहते हैं, और हम उसे वास्तविकता में बदल देंगे।</p>
+            <form action="YOUR_FORM_SUBMISSION_ENDPOINT" method="POST" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-xl text-gray-800">
+                <div class="mb-5">
+                    <input type="text" id="name" name="name" placeholder="आपका नाम" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+                </div>
+                <div class="mb-5">
+                    <input type="email" id="email" name="email" placeholder="आपका ईमेल" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+                </div>
+                <div class="mb-5">
+                    <textarea id="message" name="message" rows="5" placeholder="आपका संदेश" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 rounded-md hover:bg-indigo-700 transition duration-300">
+                    संदेश भेजें <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2023 आपका ब्रांड। सभी अधिकार सुरक्षित।</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-github text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* Custom styles go here, if needed */
+/* For example, if you want specific custom animations or overrides */
+
+/* Keyframe for fade-in-down animation */
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 1s ease-out forwards;
+}
+
+/* Keyframe for fade-in-up animation */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 1s ease-out 0.3s forwards; /* 0.3s delay */
+}
+
+/* Keyframe for pop-in animation */
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-pop-in {
+    animation: pop-in 0.8s ease-out 0.6s forwards; /* 0.6s delay */
+}
+
+/* Ensure smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* For better responsiveness on very small screens, adjust font sizes */
+@media (max-width: 640px) {
+    #hero h1 {
+        font-size: 2.5rem; /* Equivalent to text-4xl */
+    }
+    #hero p {
+        font-size: 1rem; /* Equivalent to text-lg */
+    }
+    .text-3xl {
+        font-size: 2rem;
+    }
+    .text-4xl {
+        font-size: 2.5rem;
+    }
+}
